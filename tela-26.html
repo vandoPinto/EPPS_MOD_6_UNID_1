@@ -11,14 +11,21 @@
 <div class=" coluna-esquerda largura-1_2">
     <div style="margin: 132px auto auto 76px;width: 73%;">
         <p>A convergências desses três fluxos, que vimos anteriormente, é igual a abertura da janela de
-            oportunidades.
-            Clique no modelo teórico do processo de formulação de política pública para ampliá-lo.</p>
+            oportunidades.<br>
+            <b>Clique</b> no modelo teórico do processo de formulação de política pública para ampliá-lo.</p>
     </div>
 </div>
 <div class="coluna-direita largura-1_2 ">
     <div class="animate__animated animate__zoomIn">
-        <img src="recursos/imgs/RIM_Epid_M6_INF05.svg" style="width: 260px;margin-top: 11px;margin-right: 80px;">
+        <img id="botao_1" src="recursos/imgs/RIM_Epid_M6_INF05.svg" style="width: 260px;margin-top: 11px;margin-right: 80px;">
     </div>
+    <div id="janela_1"
+    style="width: 800px; height: 370px; background-color: var(--color-orange); position: absolute; top: 80px; left: 48px; align-items: flex-start; justify-content: center; cursor: pointer; display: none;">
+    <div style="overflow-y: scroll;height: 369px;">
+        <img src="recursos/imgs/RIM_Epid_M6_INF05.svg" style="width: 600px;margin-left: 80px;">
+    </div>
+    <p style="color: white;position: absolute;top: 10px;right: 20px;font-weight: bold;">X</p>
+</div>
 </div>
 <footer class="bg-footer" style="padding: 0; height: 40px;">
     <div style="display: flex;justify-content: space-between;">
@@ -27,16 +34,40 @@
                 style="width: 80px;height: 26px;background:  var(--color-blue1);color: white;display: flex;align-items: center;justify-content: center;margin: auto;">
                 <p style="font-weight: 900;font-size: 11px;">Unidade 1</p>
             </div>
-            <p style="font-size: 11px;width: 261px;margin-left: 10px;margin-top: 6px;">O SUS como processo histórico
-                em
-                construção: afirmar o direito à saúde com ênfase na equidade</p>
+            <p style="font-size: 11px;width: 261px;margin: auto auto auto 10px;">Conhecendo o que se define como
+                Avaliação</p>
         </div>
         <div style="display: flex;margin-right: 14px;height: 40px;">
             <div
                 style="width: 80px;height: 26px;background:  var(--color-blue1);color: white;display: flex;align-items: center;justify-content: center;margin: auto;">
-                <p style="font-weight: 900;font-size: 11px;">Módulo 1</p>
+                <p style="font-weight: 900;font-size: 11px;">Módulo 6</p>
             </div>
-            <p style="font-size: 11px;margin-left: 10px;">(Re)conhecendo o Sistema Único de Saúde</p>
+            <p style="font-size: 11px;margin-left: 10px;">Avaliação e monitoramento de políticas de saúde</p>
         </div>
     </div>
 </footer>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>
