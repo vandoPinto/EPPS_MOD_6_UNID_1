@@ -25,6 +25,17 @@
     <div class="animate__animated animate__backInRight">
         <img src="recursos/imgs/CODEP_EPPS_M6U1_RIM03.svg" style="width: 400px;margin-top: 9px;margin-right: 37px;">
     </div>
+    <div>
+        <div id="botao_1" style="width: 400px; height: 350px; position: absolute; top: 85px; cursor: pointer;">
+        </div>
+    </div>
+    <div id="janela_1"
+        style="width: 800px; height: 370px; background-color: var(--color-orange); position: absolute; top: 80px; left: 48px; align-items: flex-start; justify-content: center; cursor: pointer; display: none;">
+        <div style="overflow-y: scroll;height: 369px;">
+            <img src="recursos/imgs/CODEP_EPPS_M6U1_RIM03.svg" style="width: 600px;margin-left: 80px;">
+        </div>
+        <p style="color: white;position: absolute;top: 10px;right: 20px;font-weight: bold;">X</p>
+    </div>
 </div>
 <footer class="bg-footer" style="padding: 0; height: 40px;">
     <div style="display: flex;justify-content: space-between;">
@@ -46,3 +57,28 @@
         </div>
     </div>
 </footer>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>
