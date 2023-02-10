@@ -1,0 +1,94 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="350px" height="350px" viewBox="0 0 350 350">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="41.49999999999997" y1="176.2" x2="324.9" y2="176.2" spreadMethod="pad">
+<stop  offset="0%" stop-color="#47B5C3"/>
+
+<stop  offset="100%" stop-color="#E5FFF9"/>
+</linearGradient>
+
+<g id="Layer1_0_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 283.4 76
+Q 241.9 34.5 183.2 34.5 124.5 34.5 83 76 41.5 117.5 41.5 176.2 41.5 234.9 83 276.4 124.5 317.9 183.2 317.9 241.9 317.9 283.4 276.4 324.9 234.9 324.9 176.2 324.9 117.5 283.4 76 Z"/>
+</g>
+
+<g id="Layer1_1_FILL">
+<path fill="#FAC496" stroke="none" d="
+M 220.85 104.45
+L 254.5 104.45 220.85 64.5 220.85 104.45 Z"/>
+
+<path fill="#FFAC5A" stroke="none" d="
+M 254.5 104.45
+L 220.85 104.45 220.85 64.5 94.5 64.5 94.5 284.55 254.5 284.55 254.5 104.45 Z"/>
+</g>
+
+<g id="Layer1_1_MEMBER_0_FILL">
+<path fill="#F4FAFA" stroke="none" d="
+M 169.85 144
+L 169.85 155 300.65 155 300.65 144 169.85 144 Z"/>
+</g>
+
+<g id="Layer1_1_MEMBER_1_FILL">
+<path fill="#F4FAFA" stroke="none" d="
+M 169.85 144
+L 169.85 155 300.65 155 300.65 144 169.85 144 Z"/>
+</g>
+
+<g id="Layer1_1_MEMBER_2_FILL">
+<path fill="#F4FAFA" stroke="none" d="
+M 169.85 144
+L 169.85 155 300.65 155 300.65 144 169.85 144 Z"/>
+</g>
+
+<g id="Layer1_1_MEMBER_3_FILL">
+<path fill="#F4FAFA" stroke="none" d="
+M 169.85 144
+L 169.85 155 300.65 155 300.65 144 169.85 144 Z"/>
+</g>
+
+<g id="Layer1_1_MEMBER_4_FILL">
+<path fill="#F4FAFA" stroke="none" d="
+M 169.85 144
+L 169.85 155 300.65 155 300.65 144 169.85 144 Z"/>
+</g>
+
+<g id="Layer1_1_MEMBER_5_FILL">
+<path fill="#F4FAFA" stroke="none" d="
+M 169.85 144
+L 169.85 155 300.65 155 300.65 144 169.85 144 Z"/>
+</g>
+</defs>
+
+<g transform="matrix( 0, -1.018524169921875, 1.018524169921875, 0, -4.45,361.6) ">
+<use xlink:href="#Layer1_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Layer1_1_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, -61.6,7.95) ">
+<use xlink:href="#Layer1_1_MEMBER_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, -61.6,31.9) ">
+<use xlink:href="#Layer1_1_MEMBER_1_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, -61.6,55.85) ">
+<use xlink:href="#Layer1_1_MEMBER_2_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, -61.6,79.8) ">
+<use xlink:href="#Layer1_1_MEMBER_3_FILL"/>
+</g>
+
+<g transform="matrix( 0.6244354248046875, 0, 0, 1, 2.05,103.95) ">
+<use xlink:href="#Layer1_1_MEMBER_4_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, -61.6,-16) ">
+<use xlink:href="#Layer1_1_MEMBER_5_FILL"/>
+</g>
+</svg>

@@ -1,130 +1,67 @@
-<style>
-    form {
-        counter-reset: opcoes;
-        width: 770px;
-    }
-
-    li {
-        margin-bottom: 12px;
-        margin-left: 18px;
-    }
-
-    label {
-        font-size: 13px;
-    }
-
-    .marcado {
-        background-color: #FAC900;
-    }
-
-    .opWrong+label {
-        opacity: 0.5;
-    }
-
-    .submeter {
-        margin: 1em auto;
-        font-weight: bold;
-        color: #ffffff;
-        border-radius: 3px;
-        background-color: var(--color-orange);
-        border: solid 0 transparent;
-        outline: none;
-        box-shadow: 0 .1em rgba(0, 0, 0, .5);
-        padding: .5em;
-        display: block;
-        width: 50%;
-        cursor: pointer;
-        text-align: center;
-    }
-
-    .vf {
-        border: none;
-        width: 18px;
-        margin-left: 5px;
-        text-transform: uppercase;
-        background-color: transparent;
-        font-weight: bolder;
-        color: var(--color-orange);
-    }
-
-    .vf:focus {
-        box-shadow: 0 0 0 0;
-        border: 0 none;
-        outline: 0;
-    }
-</style>
 <div class="largura-1_1">
     <img style="width:100%; right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
-</div>
-<div style="margin-top: 5px;margin-left: 19px;">
-    <h1>Questão 3</h1>
-    <p>Conforme estudamos a avaliação pode ser definida de algumas maneiras. Leia as definições e faça a associação
-        correta.</p>
-    <div style="margin-left: 20px;margin-top: 20px;">
-        <form>
-            <input id="opc_1" type="text" size="1" name="opcao" class="12345" maxlength="1">
-            <label> Avaliação é a coleta sistemática de dados sobre atividades, características e efeitos de
-                programas para uso de interessados, de forma a reduzir incertezas, melhorar a efetividade e tomar
-                decisões
-                com respeito ao que aquele programa está fazendo.</label><br>
-            <input id="opc_2" type="text" size="1" name="opcao" class="12345" maxlength="1">
-            <label> É a aplicação sistemática de métodos e técnicas
-                oriundas da pesquisa social para aferir programas de intervenção social.</label><br>
-            <input id="opc_3" type="text" size="1" name="opcao" class="12345" maxlength="1">
-            <label> É a determinação do esforço,
-                mérito ou valor de algo. </label><br>
-        </form>
-        <div style="margin-top: 40px;">
-            <p style="margin-top: -10px;">1- Definição com foco no método</p>
-            <p style="margin-top: -10px;">2- Definição com foco nos usos</p>
-            <p style="margin-top: -10px;">3- Definição com foco na valorização</p>
+    <div style="position: absolute;top: 11px;left: 96px;">
+        <p style="font-family: 'OpenSans', sans-serif;color: #08536A;font-size: 15px;font-weight: 900;">POLÍTICAS
+            PÚBLICAS EM SAÚDE</p>
+        <div
+            style="width: 250px;height: 2px;background: #FFAC5A 0% 0% no-repeat padding-box;margin-top: -13px;margin-left: -4px;">
         </div>
     </div>
-    <div class="submeter" style="display: none;">Submeter</div>
-    <div style="margin-top: -280px; margin-left: 180px; width: 500px; height: 150px; display: none;" id="feedCerto">
-        <div class="objetivo animate__animated animate__pulse">
-            <div style="margin-top: 80px;">
-                <img class="icone-image" style="width: 11%; margin-right: -3%; margin-top: -24px;"
-                    src="recursos/icones/RM_M1A1_Icones10.svg">
-                <div class="box-click" style="width:450px;margin: 0;">
-                    <div class="line-box">
-                        <div style="margin-left: 20px;">
-                            <h1>Resposta correta</h1>
-                            <p style="margin-top: 15px;">
-                                Muito bem! Você assinalou a sequência correta. Em síntese podemos afirmar que a
-                                avaliação consiste em fazer o julgamento do valor e mérito de uma intervenção (política,
-                                programa, plano).
-                            </p>
-                        </div>
-                    </div>
-                    <div class="modal-fechar">
-                        <button class="btn-fechar" onclick="closeModalSim('dv-modal-sim')">Fechar</button>
-                    </div>
+</div>
+<div class=" coluna-esquerda largura-1_1">
+    <div style="margin: 25px auto;width: 88%;">
+        <h1>Resumindo</h1>
+        <p>Vamos recapitular o que estudamos nesta unidade?</p>
+        <div class="animate__animated animate__slideInRight"
+            style="display: flex;flex-direction: column;height: 240px;justify-content: space-between;margin-top: 26px;align-items: center;">
+            <div style="display: flex;">
+                <div
+                    style="width: 41px;height: 41px;background: #5A9DFA 0% 0% no-repeat padding-box;border-radius: 50%;display: flex;align-items: center;justify-content: center;box-shadow: 0px 3px 6px #00000029;margin: auto;">
+                    <p style="font: normal normal bold 20px/18px Open Sans;color: #FFFFFF;">1</p>
+                </div>
+                <div
+                    style="width: 599px;height: 50px;background: #5A9DFA 0% 0% no-repeat padding-box;display: flex;align-items: center;justify-content: flex-start;margin-left: -18px;z-index: -1;">
+                    <p style="font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;margin-left: 20px;">
+                        Conheceu a trajetória da avaliação e no processo de trabalho em que se insere e como se
+                        originou.
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>
-    <div style="margin-top: -280px; margin-left: 180px; width: 500px; height: 150px; display: none;" id="feedErrado">
-        <div class="objetivo animate__animated animate__pulse">
-            <div style="margin-top: 65px;">
-                <img class="icone-image" style="width: 11%; margin-right: -3%; margin-top: -24px;"
-                    src="recursos/icones/RM_M1A1_Icones10.svg">
-                <div class="box-click" style="width:450px;margin: 0;">
-                    <div class="line-box">
-                        <div style="margin-left: 20px;">
-                            <h1>Resposta incorreta</h1>
-                            <p style="margin-top: 15px;">
-                                Na verdade, a sequência correta é "2-1-3". Em síntese podemos afirmar que a
-                                avaliação
-                                consiste em fazer o julgamento do valor e mérito de uma intervenção (política,
-                                programa,
-                                plano).
-                            </p>
-                        </div>
-                    </div>
-                    <div class="modal-fechar">
-                        <button class="btn-fechar" onclick="closeModalSim('dv-modal-sim')">Fechar</button>
-                    </div>
+            <div style="display: flex;">
+                <div
+                    style="width: 41px;height: 41px;background: #FFC22F 0% 0% no-repeat padding-box;border-radius: 50%;display: flex;align-items: center;justify-content: center;box-shadow: 0px 3px 6px #00000029;margin: auto;">
+                    <p style="font: normal normal bold 20px/18px Open Sans;color: #FFFFFF;">2</p>
+                </div>
+                <div
+                    style="width: 599px;height: 50px;background: #FFC22F 0% 0% no-repeat padding-box;display: flex;align-items: center;justify-content: flex-start;margin-left: -18px;z-index: -1;">
+                    <p
+                        style="font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;margin-left: 20px;width: 566px;">
+                        Aprendeu a trajetória histórica da avaliação no mundo, no Brasil e sua inserção no setor
+                        saúde.
+                    </p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div
+                    style="width: 41px;height: 41px;background: #8C61C7 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;border-radius: 50%;display: flex;align-items: center;justify-content: center;box-shadow: 0px 3px 6px #00000029;margin: auto;">
+                    <p style="font: normal normal bold 20px/18px Open Sans;color: #FFFFFF;">3</p>
+                </div>
+                <div
+                    style="width: 599px;height: 48px;background: #8C61C7 0% 0% no-repeat padding-box;display: flex;align-items: center;justify-content: flex-start;margin-left: -18px;z-index: -1;">
+                    <p style="font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;margin-left: 20px;">
+                        Viu a importância do monitoramento para implantação de uma política e para uma avaliação de
+                        sucesso.</p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div
+                    style="width: 41px;height: 41px;background: #3BA082 0% 0% no-repeat padding-box;border-radius: 50%;display: flex;align-items: center;justify-content: center;box-shadow: 0px 3px 6px #00000029;margin: auto;">
+                    <p style="font: normal normal bold 20px/18px Open Sans;color: #FFFFFF;">4</p>
+                </div>
+                <div
+                    style="width: 599px;height: 36px;background: #3BA082 0% 0% no-repeat padding-box;display: flex;align-items: center;justify-content: flex-start;margin-left: -18px;z-index: -1;">
+                    <p style="font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;margin-left: 20px;">
+                        Na unidade 2 você estudará a avaliação de políticas públicas na concretude da prática. </p>
                 </div>
             </div>
         </div>
@@ -149,58 +86,3 @@
         </div>
     </div>
 </footer>
-<script>
-    $(() => {
-        pontos = 0;
-        let respondido = [];
-        let gabarito = ["2", "1", "3"];
-        let comparacao = [];
-        let mostrarSub = true;
-        let resposta = '';
-
-        let feedCerto = $(document).find('[id^=feedCerto]').hide();
-        let feedErrado = $(document).find('[id^=feedErrado]').hide();
-        let submeter = $(document).find('[class=submeter]').hide();
-        let questao = $(document).find('[id^=opc]');
-
-        $(feedCerto).on('click', apagarFeeds);
-        $(feedErrado).on('click', apagarFeeds);
-
-        function apagarFeeds() {
-            feedCerto.fadeOut();
-            feedErrado.fadeOut();
-        }
-
-        questao.map((index, sel) => {
-            respondido[index] = false;
-            comparacao[index] = false;
-            $(sel).click(responder);
-        });
-
-        function responder(sel) {
-            resposta = sel.target.id;
-            respondido[((sel.target.id).split("_")[1]) - 1] = true;
-            console.log(respondido);
-            if (mostrarSub && respondido.every(elem => elem == true)) {
-                submeter.fadeIn();
-            }
-        }
-
-        $(submeter).on('click', () => {
-            questao.map((index, selected) => {
-                if (selected.value.toUpperCase() == gabarito[index].toUpperCase()) {
-                    comparacao[index] = true;
-                }
-            })
-
-            if (comparacao.every(elem => elem == true)) {
-                $(feedCerto).fadeIn();
-                pontos += 1;
-                mostrarSub = false;
-                submeter.hide();
-            } else {
-                $(feedErrado).fadeIn();
-            }
-        })
-    })
-</script>

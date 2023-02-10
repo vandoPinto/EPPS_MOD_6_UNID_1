@@ -1,133 +1,206 @@
 <style>
-    p {
-        font-size: 10px;
+    li {
+        margin-bottom: 12px;
+        margin-left: 18px;
+    }
+
+    .questao:hover {
+        background-color: #FAC900;
+        cursor: pointer;
+    }
+
+    .marcado {
+        background-color: #FAC900;
+    }
+
+    .opWrong {
+        opacity: 0.5;
+    }
+
+    .submeter {
+        margin: 1em auto;
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 3px;
+        background-color: var(--color-orange);
+        border: solid 0 transparent;
+        outline: none;
+        box-shadow: 0 .1em rgba(0, 0, 0, .5);
+        padding: .5em;
+        display: block;
+        width: 50%;
+        cursor: pointer;
+        text-align: center;
     }
 </style>
-<div
-    style="background:url(recursos/imgs/RM_M1A1_Background02.svg) no-repeat; width: 100%; height: 100%;  color: var(--color-blue1);">
-    <div class="titulo-ficha-t" style="padding-top:20px">
-        <h1 style="margin: 0; margin-left: 40px;">Ficha Técnica</h1>
-    </div>
-    <div style="margin: 0 40px; margin-right: 15px;">
-        <div style="text-transform: uppercase;">
-            <p style="font-weight: 900;">© 2022. Ministério da Saúde. Fundação Oswaldo Cruz. Escola de Governo
-                Fiocruz.
-            </p>
-            <p>Alguns direitos
-                reservados. É permitida a reprodução, disseminação e utilização desta obra, desde que citada a
-                fonte. É
-                vedada a utilização para fins comerciais. Curso Políticas Públicas em Saúde. Brasília: [Curso na
-                modalidade à distância]. Escola de Governo Fiocruz, 2022.
-            </p>
+<div class="largura-1_1">
+    <img style="width:100%; right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
+    <div style="position: absolute;top: 11px;left: 96px;">
+        <p style="font-family: 'OpenSans', sans-serif;color: #08536A;font-size: 15px;font-weight: 900;">POLÍTICAS
+            PÚBLICAS EM SAÚDE</p>
+        <div
+            style="width: 250px;height: 2px;background: #FFAC5A 0% 0% no-repeat padding-box;margin-top: -13px;margin-left: -4px;">
         </div>
-        <div class="linha-col">
-            <div class="col-3">
+    </div>
+</div>
+<div class="coluna-direita largura-1_1">
+    <div style="width: 93%;margin: -11px auto;">
+        <h1>Questão 2</h1>
+        <p>Guba e Lincoln (2011), ao sistematizarem as transformações observadas no campo da avaliação, identificam
+            quatro períodos que denominaram como as gerações que marcam as mudanças do pensamento avaliativo. Com
+            base
+            nisso, julgue as afirmativas a seguir:</p>
+        <p>I- 1ª geração: Medida (1900-1930). Nesse período, avaliar significava medir, e o avaliador era o técnico
+            responsável pela aplicação dos instrumentos de mensuração.</p>
+        <p> II- 2ª geração: Descrição (1930-1960). Nessa
+            época, o contexto político social atribuía ao Estado o papel de provedor de bens sociais, contudo o
+            cenário
+            econômico era de escassez de recursos financeiros, aumentando a necessidade por melhores resultados.
+        </p>
+        <p>III- 3ª
+            geração: Julgamento (1960 -1990). Nesse período, os avaliadores começam a identificar vários avanços no
+            modelo de avaliação com foco na descrição. </p>
+        <p>IV- 4ª geração: Negociação (1990 até 2022). Nesse estágio, a
+            avaliação passa a considerar nos seus julgamentos os diferentes valores, percepções e necessidade dos
+            interessados do programa ou que podem ser afetados pelos resultados da avaliação.</p>
+        <p>Com base nas afirmativas, a sequência correta é:</p>
+        <p class="questao" id="opc_e">a) Todas as afirmativas estão corretas. </p>
+        <p class="questao" id="opc_c">b) A afirmativa III está incorreta. </p>
+        <p class="questao" id="opc_e">c) As afirmativas II, III e IV estão corretas.
+        </p>
+        <p class="questao" id="opc_e">d) A afirmativa IV está incorreta.</p>
+        <div class="submeter" style="width: 20%; margin-top: -90px; margin-right: 160px; display: none;">Submeter
+        </div>
+        <div style="position: absolute; width: 500px; left: 21%; top: 28%; height: 150px; display: none;"
+            id="feedCerto">
+            <div class="objetivo animate__animated animate__pulse">
                 <div>
-                    <h4 class="titulo-sm" style="font-size: 12px;">Ministério da Saúde</h4>
-                    <p style="margin-right: 13px;">
-                        <strong>Coordenação-Geral de Gestão de Pessoas (COGEP) do Ministério da Saúde, por meio da
-                            Coordenação de Desenvolvimento de Pessoas (CODEP)</strong>
-                    </p>
-                    <p>Fundação Oswaldo Cruz – Fiocruz<br>
-                        <strong>Nísia Trindade Lima</strong><br>
-                        Presidente
-                    </p>
-                    <p>Fiocruz Brasília – GEREB<br>
-                        <strong>Maria Fabiana Damásio Passos</strong><br>
-                        Diretora
-                    </p>
-                    <p>
-                        Escola de Governo Fiocruz Brasília – EGF<br>
-                        <strong>Luciana Sepúlveda Köptcke</strong><br>
-                        Diretora Executiva
-                    </p>
-                    <p>
-                        <strong>Escola de Governo Fiocruz Brasília</strong><br>
-                        Avenida L3 Norte, s/n, Campus Universitário Darcy<br>
-                        Ribeiro, Gleba A<br> CEP: 70.904-130 – Brasília – DF<br>
-                        Telefone: (61) 3329-4550
-                    </p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div>
-                    <h4 class="titulo-sm">Créditos</h4>
-                    <p style="margin-top: -10px;">
-                        <strong>Coordenação-Geral</strong><br>
-                        Francini Lube Guizardi<br>
-                        Coordenadora Geral
-                    </p>
-                    <p>
-                        <strong>Conteúdo</strong><br>
-                        Maria Aparecida de Assis Patroclo <br>
-                        Ana Cristina Reis
-                    </p>
-                    <p>
-                        <strong>Revisão Técnico-Científica</strong><br>
-                        Francini Lube Guizardi
-                    </p>
-                    <h4 class="titulo-sm">Produção</h4>
-                    <p style="margin-top: -10px;">
-                        <strong>Núcleo de Educação a Distância da EGF - Fiocruz Brasília</strong><br>
-                        <strong>Coordenadora de Produção</strong><br>
-                        Maria Rezende<br>
-                    </p>
-                    <p>
-                        <strong>Designer Instrucional</strong><br>
-                        Sarah Resende<br>
-                    </p>
-                    <p>
-                        <strong>Revisor</strong><br>
-                        Erick Pessôa Guilhon<br> Felipe do Nascimento Lopes
-                    </p>
-                    <p>
-                        <strong>Design Gráfico/ Ilustrador</strong><br>
-                        Daniel Lopes Dias<br> Eduardo Calazans<br> Thalisson de Araújo Cruz
-                    </p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div style="display: flex;">
-                    <div>
-                        <p>
-                            <strong>Produtor Multimídia</strong><br>
-                            Márlon Cavalcanti Lima<br> Philippe Alves Lepletier
-                        </p>
-                        <p>
-                            <strong>Produtores Multimídia</strong><br>
-                            Arthur Boás da Silva Gonzaga<br> Thiago Barreto de Souza e Silva
-                        </p>
-                        <p>
-                            <strong>Desenvolvedores</strong><br>
-                            Bruno Costa<br>
-                            Gabriel Ferreira<br>
-                            Joana D’Angeles<br>
-                            Rafael Henriques<br>
-                            Thiago Xavier<br>
-                            Vando Pinto
-                        </p>
-                        <p>
-                            <strong>Editor AVA</strong><br>
-                            Ivelma J. A. do Carmo Rodrigues
-                            <br>
-                            Trevor Furtado
-                        </p>
-                        <p>
-                            <strong>Apoio Técnico</strong><br>
-                            Dionete de Souza Gonçalves Sabate<br> Poliana dos Santos Silva
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <strong>Supervisora de Oferta</strong><br>
-                            Meirirene Moslaves
-                        </p>
+                    <img class="icone-image" style="width: 11%; margin-right: -6%; margin-top: -24px;"
+                        src="recursos/icones/RM_M1A1_Icones10.svg">
+                    <div class="box-click" style="width:468px; margin: 0;">
+                        <div class="line-box">
+                            <div style="margin-left: 20px;">
+                                <h1>Resposta correta</h1>
+                                <p style="margin-top: 15px;">
+                                    Parabéns! Na terceira geração, os avaliadores começam a identificar limitações
+                                    no
+                                    modelo de avaliação com foco na descrição, uma vez que as informações produzidas
+                                    por
+                                    esse tipo de avaliação restringem-se à descrição dos resultados alcançados sem
+                                    uma
+                                    explicação, uma justificativa dos motivos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-fechar">
+                            <button class="btn-fechar" onclick="closeModalSim('dv-modal-sim')">Fechar</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div style="position: absolute; bottom:10px; right: 0;">
-                <img src="recursos/imgs/RM_M1A1_rodapeFichaTecnica01.svg" style="width: 90%;">
+        </div>
+        <div style="position: absolute; width: 500px; left: 21%; top: 27%; height: 150px; display: none;"
+            id="feedErrado">
+            <div class="objetivo animate__animated animate__pulse">
+                <div>
+                    <img class="icone-image" style="width: 11%; margin-right: -6%; margin-top: -24px;"
+                        src="recursos/icones/RM_M1A1_Icones10.svg">
+                    <div class="box-click" style="width:468px; margin: 0;">
+                        <div class="line-box">
+                            <div style="margin-left: 20px;">
+                                <h1>Resposta incorreta</h1>
+                                <p style="margin-top: 15px;">
+                                    A alternativa “b” está correta. Na terceira geração, os avaliadores começam a
+                                    identificar limitações no modelo de avaliação com foco na descrição, uma vez que
+                                    as
+                                    informações produzidas por esse tipo de avaliação restringem-se à descrição dos
+                                    resultados alcançados sem uma explicação, uma justificativa dos motivos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-fechar">
+                            <button class="btn-fechar" onclick="closeModalSim('dv-modal-sim')">Fechar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<footer class="bg-footer" style="padding: 0; height: 40px;">
+    <div style="display: flex;justify-content: space-between;">
+        <div style="display: flex;margin-left: 13px;height: 40px;">
+            <div
+                style="width: 80px;height: 26px;background:  var(--color-blue1);color: white;display: flex;align-items: center;justify-content: center;margin: auto;">
+                <p style="font-weight: 900;font-size: 11px;">Unidade 1</p>
+            </div>
+            <p style="font-size: 11px;width: 261px;margin: auto auto auto 10px;">Conhecendo o que se define como
+                Avaliação</p>
+        </div>
+        <div style="display: flex;margin-right: 14px;height: 40px;">
+            <div
+                style="width: 80px;height: 26px;background:  var(--color-blue1);color: white;display: flex;align-items: center;justify-content: center;margin: auto;">
+                <p style="font-weight: 900;font-size: 11px;">Módulo 6</p>
+            </div>
+            <p style="font-size: 11px;margin-left: 10px;">Avaliação e monitoramento de políticas de saúde</p>
+        </div>
+    </div>
+</footer>
+<script>
+    $(() => {
+        let resposta = '';
+        let mostrarSub = true;
+        let feedCerto = $(document).find('[id^=feedCerto]').hide();
+        let feedErrado = $(document).find('[id^=feedErrado]').hide();
+        let submeter = $(document).find('[class=submeter]').hide();
+
+        $(feedCerto).on('click', apagarFeeds);
+        $(feedErrado).on('click', apagarFeeds);
+
+        function apagarFeeds() {
+            feedCerto.fadeOut();
+            feedErrado.fadeOut();
+        }
+
+        function desmarcarTudo() {
+            let questao = $(document).find('[id^=opc]').map((index, sel) => {
+                $(sel).removeClass("marcado");
+            })
+        }
+
+        let questao = $(document).find('[id^=opc]').map((index, sel) => {
+            $(sel).click(() => {
+                console.log(sel.id);
+                resposta = sel.id;
+                if (mostrarSub) {
+                    submeter.fadeIn();
+                }
+
+                desmarcarTudo();
+                $(sel).addClass("marcado");
+            })
+        })
+
+
+        $(submeter).on('click', () => {
+            console.log("clicou " + resposta.split("_")[1]);
+            if (resposta.split("_")[1] == "c") {
+                $(feedCerto).fadeIn();
+                pontos += 1;
+                mostrarSub = false;
+                submeter.hide();
+
+                // opacidade das questões erradas e marcação da questão certa
+
+                let questao = $(document).find('[id^=opc]').map((index, sel) => {
+                    $(sel).removeClass("questao").css("pointer-events", "none");
+
+                    let opacityWrong = $(document).find('[id^=opc_e]').addClass('opWrong');
+
+                })
+            } else {
+                $(feedErrado).fadeIn();
+            }
+        })
+    })
+</script>

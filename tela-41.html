@@ -1,3 +1,38 @@
+<style>
+    li {
+        margin-bottom: 12px;
+        margin-left: 18px;
+    }
+
+    .questao:hover {
+        background-color: #FAC900;
+        cursor: pointer;
+    }
+
+    .marcado {
+        background-color: #FAC900;
+    }
+
+    .opWrong {
+        opacity: 0.5;
+    }
+
+    .submeter {
+        margin: 1em auto;
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 3px;
+        background-color: var(--color-orange);
+        border: solid 0 transparent;
+        outline: none;
+        box-shadow: 0 .1em rgba(0, 0, 0, .5);
+        padding: .5em;
+        display: block;
+        width: 50%;
+        cursor: pointer;
+        text-align: center;
+    }
+</style>
 <div class="largura-1_1">
     <img style="width:100%; right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
     <div style="position: absolute;top: 11px;left: 96px;">
@@ -8,46 +43,70 @@
         </div>
     </div>
 </div>
-<div class="coluna-esquerda largura-1_1 ">
-    <div style="margin: 44px auto; width: 90%;">
-        <p>
-            PATROCLO, M. A. A. <b>
-                As múltiplas facetas da interação entre pesquisa e o processo de formulação de política
-                pública e ou intervenção em saúde pública
-            </b>. 222 f. Tese (Doutorado Ciências na área de Saúde Pública) – Escola
-            Nacional de Saúde Pública Sergio Arouca, Rio de Janeiro, 2011.
-        </p>
-        <p>
-            PAIM, J. S. Avaliação em saúde: uma prática em
-            construção no Brasil. In: HARTZ Z. M.; VIEIRA-DA-SILVA, L. M (Orgs). <b>Avaliação em saúde</b>: dos modelos
-            teóricos à
-            prática na avaliação de programas e sistemas de saúde. Rio de Janeiro: Editora Fiocruz, 2005. p. 9-11
-        </p>
-        <p>
-            MOURA, E.
-            C.; LIMA, A. M. P.; URDANETA, M. Uso de indicadores para o monitoramento das ações de promoção e atenção da
-            Política Nacional de Atenção Integral à Saúde do Homem (PNAISH). <b>Ciência & Saúde Coletiva</b>,
-            [<i>S.l.</i>], v. 17, n. 10,
-            pp. 2597-2606, 2012
-        </p>
-        <p>
-            VAITSMAN, J. Monitoramento e avaliação de programas sociais: principais desafios. In: MDS.
-            <b>Concepção e gestão da proteção social não contributiva no Brasil</b>. Brasília: MDS, UNESCO, 2009.
-        </p>
-        <p>
-            WORTHEN, B.;
-            SANDERS, J.; FITZPATRICK, J. O objetivo, os usos e as distinções conceituais básicos da avaliação. In:
-            WORTHEN,
-            B. <i>et al</i>. (Orgs). <b>Avaliação de programas</b>: concepções e práticas. São Paulo: Gente, 2004. p.
-            33-58.
-        </p>
-        <p>
-            TANAKA, O.Y.;
-            TAMAKI, E.M. O papel da avaliação para a tomada de decisão na gestão de serviços de saúde. <b>
-                Ciência & Saúde
-                Coletiva
-            </b>, [<i>S.l.</i>], v. 17, n. 4, pp. 901-911, 2012.
-        </p>
+<div class="coluna-direita largura-1_1">
+    <div style="width: 83%;margin: 25px auto;">
+        <h1>Questão 1</h1>
+        <p>Para alguns autores, as primeiras avaliações de políticas sociais aconteceram no final do século XVIII, na
+            Alemanha, Inglaterra, França e na América do Norte? </p>
+        <div style="margin-left: 20px;">
+            <p class="questao" id="opc_c">a) Verdadeiro </p>
+            <p class="questao" id="opc_e">b) Falso</p>
+        </div>
+        <div class="submeter" style="width: 20%; margin-top: 150px; display: none;">Submeter</div>
+        <div style="position: absolute; width: 500px; left: 21%; top: 28%; height: 150px; display: none;"
+            id="feedCerto">
+            <div class="objetivo animate__animated animate__pulse">
+                <div>
+                    <img class="icone-image" style="width: 11%; margin-right: -6%; margin-top: -24px;"
+                        src="recursos/icones/RM_M1A1_Icones10.svg">
+                    <div class="box-click" style="width:468px; margin: 0;">
+                        <div class="line-box">
+                            <div style="margin-left: 20px;">
+                                <h1>Resposta correta</h1>
+                                <p style="margin-top: 15px;">
+                                    Você acertou! Para alguns autores, as primeiras avaliações de políticas sociais
+                                    aconteceram no final do século XVIII, na Alemanha, Inglaterra, França e na América
+                                    do Norte. Esses países protagonizam uma série de avanços tecnológicos relacionados à
+                                    revolução industrial. Nessa época, as avaliações tinham como propósito verificar em
+                                    que medida as intervenções implantadas estavam provocando melhorias nas condições de
+                                    vida da sociedade.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-fechar">
+                            <button class="btn-fechar" onclick="closeModalSim('dv-modal-sim')">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="position: absolute; width: 500px; left: 21%; top: 27%; height: 150px; display: none;"
+            id="feedErrado">
+            <div class="objetivo animate__animated animate__pulse">
+                <div>
+                    <img class="icone-image" style="width: 11%; margin-right: -6%; margin-top: -24px;"
+                        src="recursos/icones/RM_M1A1_Icones10.svg">
+                    <div class="box-click" style="width:468px; margin: 0;">
+                        <div class="line-box">
+                            <div style="margin-left: 20px;">
+                                <h1>Resposta incorreta</h1>
+                                <p style="margin-top: 15px;">
+                                    Na verdade, a afirmativa está correta. Conforme estudamos, para alguns autores, as
+                                    primeiras avaliações de políticas sociais aconteceram no final do século XVIII, na
+                                    Alemanha, Inglaterra, França e na América do Norte. Esses países protagonizam uma
+                                    série de avanços tecnológicos relacionados à revolução industrial. Nessa época, as
+                                    avaliações tinham como propósito verificar em que medida as intervenções implantadas
+                                    estavam provocando melhorias nas condições de vida da sociedade.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-fechar">
+                            <button class="btn-fechar" onclick="closeModalSim('dv-modal-sim')">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <footer class="bg-footer" style="padding: 0; height: 40px;">
@@ -69,3 +128,61 @@
         </div>
     </div>
 </footer>
+<script>
+    $(() => {
+        let resposta = '';
+        let mostrarSub = true;
+        let feedCerto = $(document).find('[id^=feedCerto]').hide();
+        let feedErrado = $(document).find('[id^=feedErrado]').hide();
+        let submeter = $(document).find('[class=submeter]').hide();
+
+        $(feedCerto).on('click', apagarFeeds);
+        $(feedErrado).on('click', apagarFeeds);
+
+        function apagarFeeds() {
+            feedCerto.fadeOut();
+            feedErrado.fadeOut();
+        }
+
+        function desmarcarTudo() {
+            let questao = $(document).find('[id^=opc]').map((index, sel) => {
+                $(sel).removeClass("marcado");
+            })
+        }
+
+        let questao = $(document).find('[id^=opc]').map((index, sel) => {
+            $(sel).click(() => {
+                console.log(sel.id);
+                resposta = sel.id;
+                if (mostrarSub) {
+                    submeter.fadeIn();
+                }
+
+                desmarcarTudo();
+                $(sel).addClass("marcado");
+            })
+        })
+
+
+        $(submeter).on('click', () => {
+            console.log("clicou " + resposta.split("_")[1]);
+            if (resposta.split("_")[1] == "c") {
+                $(feedCerto).fadeIn();
+                pontos += 1;
+                mostrarSub = false;
+                submeter.hide();
+
+                // opacidade das questões erradas e marcação da questão certa
+
+                let questao = $(document).find('[id^=opc]').map((index, sel) => {
+                    $(sel).removeClass("questao").css("pointer-events", "none");
+
+                    let opacityWrong = $(document).find('[id^=opc_e]').addClass('opWrong');
+
+                })
+            } else {
+                $(feedErrado).fadeIn();
+            }
+        })
+    })
+</script>
