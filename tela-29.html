@@ -8,39 +8,24 @@
         </div>
     </div>
 </div>
-<div class=" coluna-esquerda largura-1_1">
-    <div style="margin: 53px auto;width: 83%;">
-        <p>Para representar o segundo momento de desenvolvimento do campo da avaliação, o autor faz menção à
-            pesquisa
-            avaliativa social, ou seja, surge uma maior necessidade de adotar métodos sistemáticos para se fazer
-            avaliação. A partir daí, surgem três grandes ramos da avaliação:</p>
-        <div class="animate__animated animate__slideInRight"
-            style="margin: 41px auto;display: flex;align-items: center;justify-content: space-between;flex-direction: column;height: 180px;">
-            <div
-                style="width: 599px;height: 52px;background: #FAC496 0% 0% no-repeat padding-box;display: flex;align-items: center;justify-content: center;">
-                <p style="width: 566px;font: normal normal normal 14px/18px Open Sans;color: #08536A;">
-                    •
-                    Fluxo de problemas: indicadores, crises e eventos e feedback (análise negativa da intervenção
-                    retorna como problema para o gestor).
-                </p>
-            </div>
-            <div
-                style="width: 599px;height: 35px;background: #FAC496 0% 0% no-repeat padding-box;display: flex;align-items: center;justify-content: center;">
-                <p style="width: 566px;font: normal normal normal 14px/18px Open Sans;color: #08536A;">
-                    •
-                    Fluxo de Solução: viabilidade técnica, aceitação social e custos financeiros toleráveis.
-                </p>
-            </div>
-            <div
-                style="width: 599px;height: 60px;background: #FAC496 0% 0% no-repeat padding-box;display: flex;align-items: center;justify-content: center;">
-                <p style="width: 566px;font: normal normal normal 14px/18px Open Sans;color: #08536A;">
-                    •
-                    Fluxo de política: clima nacional, forças políticas e mudanças no governo (escolha de
-                    governante,
-                    definição do orçamento, mudança de titulares das pastas ministeriais).</p>
-            </div>
-        </div>
+<div class=" coluna-esquerda largura-1_2">
+    <div style="margin: 132px auto auto 76px;width: 73%;">
+        <p>A convergências desses três fluxos, que vimos anteriormente, é igual a abertura da janela de
+            oportunidades.<br>
+            <b>Clique</b> no modelo teórico do processo de formulação de política pública para ampliá-lo.</p>
     </div>
+</div>
+<div class="coluna-direita largura-1_2 ">
+    <div class="animate__animated animate__zoomIn">
+        <img id="botao_1" src="recursos/imgs/RIM_Epid_M6_INF05.svg" style="width: 260px;margin-top: 11px;margin-right: 80px;">
+    </div>
+    <div id="janela_1"
+    style="width: 800px; height: 370px; background-color: var(--color-orange); position: absolute; top: 80px; left: 48px; align-items: flex-start; justify-content: center; cursor: pointer; display: none;">
+    <div style="overflow-y: scroll;height: 369px;">
+        <img src="recursos/imgs/RIM_Epid_M6_INF05.svg" style="width: 600px;margin-left: 80px;">
+    </div>
+    <p style="color: white;position: absolute;top: 10px;right: 20px;font-weight: bold;">X</p>
+</div>
 </div>
 <footer class="bg-footer" style="padding: 0; height: 40px;">
     <div style="display: flex;justify-content: space-between;">
@@ -61,3 +46,28 @@
         </div>
     </div>
 </footer>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>

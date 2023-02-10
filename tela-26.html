@@ -8,24 +8,30 @@
         </div>
     </div>
 </div>
-<div class="coluna-esquerda largura-1_2 altura-1_1" style="width: 100%;">
-    <div style="margin: 140px auto auto 60px;width: 84%;">
-        <p> Vamos analisar o processo de formulação de política pública para a interrupção segura da gravidez, no
-            SUS,
-            utilizando o modelo desenvolvido por Patroclo e Giovanella em 2011.<br> <b>Clique</b> na imagem para
-            ampliá-la.</p>
-    </div>
-</div>
-<div class="coluna-direita largura-1_2 ">
-    <div id="botao_1" class="animate__animated animate__backInRight">
-        <img src="recursos/imgs/RIM_Epid_M6_INF03.svg" style="width: 392px;margin-top: 11px;margin-right: 28px;">
-    </div>
-    <div id="janela_1"
-        style="width: 800px; height: 370px; background-color: var(--color-orange); position: absolute; top: 80px; left: 48px; align-items: flex-start; justify-content: center; cursor: pointer; display: none;">
-        <div style="overflow-y: scroll;height: 369px;">
-            <img src="recursos/imgs/RIM_Epid_M6_INF03.svg" style="width: 600px;margin-left: 80px;">
+<div class="coluna-esquerda largura-1_1">
+    <div class="objetivo animate__animated animate__pulse">
+        <div style="margin-top: 81px;">
+            <img class="icone-image" style="width: 8%;margin-right: 13%;margin-top: -30px;"
+                src="recursos/icones/RM_M1A1_Icones06.svg">
+            <div class="box-click" style="width: 64%;">
+                <div class="line-box">
+                    <div style="margin-left: 20px;">
+                        <h2>Importante</h2>
+                        <p style="margin-top: 15px;">
+                            Considera-se como princípio no modelo de Patroclo e Giovanella, que apresentaremos na
+                            tela
+                            seguinte, que todo país está envolto por um contexto socioeconômico-cultural e
+                            tecnológico.
+                        </p>
+                        <p>Nesse processo, ao mesmo tempo que esse contexto sofre a influência dos demais contextos
+                            existentes em outras nações do mundo, ele também os influencia. Esses três elementos
+                            serão
+                            os responsáveis pela dinamização dos fluxos do modelo de Kingdon. Veja na tela a seguir.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p style="color: white;position: absolute;top: 10px;right: 20px;font-weight: bold;">X</p>
     </div>
 </div>
 <footer class="bg-footer" style="padding: 0; height: 40px;">
@@ -47,28 +53,3 @@
         </div>
     </div>
 </footer>
-<script>
-    $(() => {
-        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
-        apagarJanelas();
-        $(document).find('[id^=btn]').hide();
-        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
-            $(botao).css('cursor', 'pointer');
-            $(botao).hover(() => {
-                $(document).find(`[id=btn_${index + 1}_2]`).show();
-            });
-            $(botao).mouseleave(() => {
-                $(document).find('[id^=btn]').hide();
-            });
-            $(botao).click(() => {
-                apagarJanelas();
-                $(janelas[index]).fadeIn();
-            })
-        })
-        function apagarJanelas() {
-            janelas.map((index, janela) => {
-                $(janela).hide();
-            })
-        }
-    })
-</script>

@@ -1,10 +1,12 @@
 <style>
-    .janela {
-        display: none;
+    .two-boxes {
+        display: flex;
+        width: 100%;
+        gap: 10px;
     }
 
-    .botao {
-        cursor: pointer;
+    .box-click {
+        padding: 10px 20px;
     }
 </style>
 <div class="largura-1_1">
@@ -18,143 +20,92 @@
     </div>
 </div>
 <div class="coluna-esquerda largura-1_1 ">
-    <div style="margin: -14px auto;width: 93%;display: flex;">
-        <p style="margin: 150px auto auto 0px;">Vejamos, agora, algumas definições importantes. <b>Clique</b> nas
+    <div style="margin: 0px auto; width: 85%; ">
+        <p>Vejamos, agora, algumas definições importantes. <b>Clique</b> nas
             abas para observá-las!</p>
-        <div style="margin-left: 60px;margin-top: 20px;">
-            <div class="boxs">
-                <div class="botao"
-                    style="display: flex;width: 608px;height: 35px;background: #3D9BA7 0% 0% no-repeat padding-box;color: white;justify-content: flex-start;align-items: center;margin-bottom: 12px;">
-                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin: -2px 0px 0px 9px;height: 39px;">
-                    <p style="margin-left: 18px;font-size: 12px;">Contexto sócio eco cultural e tecnológico</p>
+        <div class="animate__animated animate__slideInUp"
+            style="display: flex;justify-content: space-between;margin-top: 29px;">
+            <div>
+                <div id="botao_1"
+                    style="margin-bottom: 12px; width: 378px; height: 35px; background: 0% 0% no-repeat padding-box padding-box rgb(255, 172, 90); display: flex; margin-left: 10px; cursor: pointer;">
+                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin-left: 10px;">
+                    <p style="font-size: 12px;color: white;margin-left: 18px;">Contexto sócio eco cultural e tecnológico
+                    </p>
                 </div>
-                <div class="janela" style="display: none;">
-                    <div
-                        style="width: 608px;height: 98px;background: #FFFFFFDB 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;margin-top: -10px;text-align: center;">
-                        <p
-                            style="font-size: 12px;font: normal normal normal 12px/13px Open sans;color: #0D536A;padding-top: 20px;padding-left: 16px;">
-                            É o conjunto de fatores/forças ambientais, econômicos, políticos, ecológicos, culturais
-                            e de
-                            conhecimentos, métodos, produtos e técnicas em contato ou relacionados com os seres
-                            humanos.
-                        </p>
-                    </div>
+                <div id="botao_2"
+                    style="margin-bottom: 12px; width: 378px; height: 35px; background: 0% 0% no-repeat padding-box padding-box rgb(255, 172, 90); display: flex; margin-left: 10px; cursor: pointer;">
+                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin-left: 10px;">
+                    <p style="font-size: 12px;color: white;margin-left: 18px;">Ideias</p>
                 </div>
-            </div>
-
-            <div class="boxs">
-                <div class="botao"
-                    style="display: flex;width: 608px;height: 35px;background: #3D9BA7 0% 0% no-repeat padding-box;color: white;justify-content: flex-start;align-items: center;margin-bottom: 12px;">
-                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin: -2px 0px 0px 9px;height: 39px;">
-                    <p style="margin-left: 18px;font-size: 12px;">Ideias</p>
+                <div id="botao_3"
+                    style="margin-bottom: 12px; width: 378px; height: 35px; background: 0% 0% no-repeat padding-box padding-box rgb(255, 172, 90); display: flex; margin-left: 10px; cursor: pointer;">
+                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin-left: 10px;">
+                    <p style="font-size: 12px;color: white;margin-left: 18px;">Funções das ideias</p>
                 </div>
-                <div class="janela" style="display: none;">
-                    <div
-                        style="width: 608px;height: 98px;background: #FFFFFFDB 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;margin-top: -10px;text-align: center;">
-                        <p
-                            style="font-size: 12px;font: normal normal normal 12px/13px Open sans;color: #0D536A;padding-top: 20px;padding-left: 16px;">
-                            Abrangem valores, ideologias, concepções de mundo, símbolos, imagens, problemas, causas
-                            e
-                            soluções de problemas, resultados de estudos científicos etc.</p>
-                    </div>
+                <div id="botao_4"
+                    style="margin-bottom: 12px; width: 378px; height: 35px; background: 0% 0% no-repeat padding-box padding-box rgb(255, 172, 90); display: flex; margin-left: 10px; cursor: pointer;">
+                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin-left: 10px;">
+                    <p style="font-size: 12px;color: white;margin-left: 18px;">Atores</p>
                 </div>
-            </div>
-            <div class="boxs">
-                <div class="botao"
-                    style="display: flex;width: 608px;height: 35px;background: #3D9BA7 0% 0% no-repeat padding-box;color: white;justify-content: flex-start;align-items: center;margin-bottom: 12px;">
-                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin: -2px 0px 0px 9px;height: 39px;">
-                    <p style="margin-left: 18px;font-size: 12px;">Funções das ideias</p>
+                <div id="botao_5"
+                    style="margin-bottom: 12px; width: 378px; height: 35px; background: 0% 0% no-repeat padding-box padding-box rgb(255, 172, 90); display: flex; margin-left: 10px; cursor: pointer;">
+                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin-left: 10px;">
+                    <p style="font-size: 12px;color: white;margin-left: 18px;">Agentes empreendedores</p>
                 </div>
-                <div class="janela" style="display: none;">
-                    <div
-                        style="width: 608px;height: 98px;background: #FFFFFFDB 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;margin-top: -10px;text-align: center;">
-                        <p
-                            style="font-size: 12px;font: normal normal normal 12px/13px Open sans;color: #0D536A;padding-top: 20px;padding-left: 16px;">
-                            Servir de mapas, cartografias para os atores identificarem suas preferências, oferecer
-                            soluções, principalmente quando existe desequilíbrio nas discussões, e impedir a
-                            cristalização de rotinas políticas considerando os valores repetitivos nas práticas
-                            institucionais.
-                        </p>
-                    </div>
+                <div id="botao_6"
+                    style="width: 378px; height: 35px; background: 0% 0% no-repeat padding-box padding-box rgb(255, 172, 90); display: flex; margin-left: 10px; cursor: pointer;">
+                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin-left: 10px;">
+                    <p style="font-size: 12px;color: white;margin-left: 18px;">Instituições e institucionalidades</p>
+                </div>
+                <div id="botao_7"
+                    style="width: 378px; height: 35px; background: 0% 0% no-repeat padding-box padding-box rgb(255, 172, 90); display: flex; margin-left: 10px; cursor: pointer;">
+                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin-left: 10px;">
+                    <p style="font-size: 12px;color: white;margin-left: 18px;">Comunidades epistêmicas</p>
                 </div>
             </div>
-            <div class="boxs">
-                <div class="botao"
-                    style="display: flex;width: 608px;height: 35px;background: #3D9BA7 0% 0% no-repeat padding-box;color: white;justify-content: flex-start;align-items: center;margin-bottom: 12px;">
-                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin: -2px 0px 0px 9px;height: 39px;">
-                    <p style="margin-left: 18px;font-size: 12px;">Atores</p>
+            <div
+                style="width: 309px;height: 309px;background: #FFAC5A 0% 0% no-repeat padding-box;mix-blend-mode: normal;opacity: 0.95;margin-top: -10px;display: flex;align-items: center;justify-content: space-around;">
+                <div class="jan" id="janela_1" style="display: none; cursor: pointer;">
+                    <p style="width: 283px;height: 73px;font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;">
+                        É o conjunto de fatores/forças ambientais, econômicos, políticos, ecológicos, culturais e de
+                        conhecimentos, métodos, produtos e técnicas em contato ou relacionados com os seres humanos.</p>
                 </div>
-                <div class="janela" style="display: none;">
-                    <div
-                        style="width: 608px;height: 98px;background: #FFFFFFDB 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;margin-top: -10px;text-align: center;">
-                        <p
-                            style="font-size: 12px;font: normal normal normal 12px/13px Open sans;color: #0D536A;padding-top: 20px;padding-left: 16px;">
-                            Todas as pessoas com papel social e que, com base nas preferências e nos interesses,
-                            baseado
-                            em ideias que circulam na sociedade e nas ideias das instituições a que estejam
-                            vinculados,
-                            priorizam problemas e soluções e influenciam os que estão ao seu lado ou nas suas redes
-                            sociais. Importante destacar que também são influenciados o tempo todo.</p>
-                    </div>
+                <div class="jan" id="janela_2" style="display: none; cursor: pointer;">
+                    <p style="width: 283px;height: 73px;font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;">
+                        Abrangem valores, ideologias, concepções de mundo, símbolos, imagens, problemas, causas e
+                        soluções de problemas, resultados de estudos científicos etc.</p>
                 </div>
-            </div>
-            <div class="boxs">
-                <div class="botao"
-                    style="display: flex;width: 608px;height: 35px;background: #3D9BA7 0% 0% no-repeat padding-box;color: white;justify-content: flex-start;align-items: center;margin-bottom: 12px;">
-                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin: -2px 0px 0px 9px;height: 39px;">
-                    <p style="margin-left: 18px;font-size: 12px;">Agentes empreendedores</p>
+                <div class="jan" id="janela_3" style="display: none; cursor: pointer;">
+                    <p style="width: 283px;height: 73px;font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;">
+                        Servir de mapas, cartografias para os atores identificarem suas preferências, oferecer soluções,
+                        principalmente quando existe desequilíbrio nas discussões, e impedir a cristalização de rotinas
+                        políticas considerando os valores repetitivos nas práticas institucionais.</p>
                 </div>
-                <div class="janela" style="display: none;">
-                    <div
-                        style="width: 608px;height: 98px;background: #FFFFFFDB 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;margin-top: -10px;text-align: center;">
-                        <p
-                            style="font-size: 12px;font: normal normal normal 12px/13px Open sans;color: #0D536A;padding-top: 20px;padding-left: 16px;">
-                            Atores sociais com diferentes inserções e posições de poder e saber que influenciam as
-                            políticas públicas, produzindo ou difundindo saber sobre problemas, soluções e momentos
-                            políticos e contribuindo para o processo de formulação de políticas.
-                        </p>
-                    </div>
+                <div class="jan" id="janela_4" style="display: none; cursor: pointer;">
+                    <p style="width: 283px;height: 73px;font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;">
+                        Todas as pessoas com papel social e que, com base nas preferências e nos interesses, baseado em
+                        ideias que circulam na sociedade e nas ideias das instituições a que estejam vinculados,
+                        priorizam problemas e soluções e influenciam os que estão ao seu lado ou nas suas redes sociais.
+                        Importante destacar que também são influenciados o tempo todo.</p>
                 </div>
-            </div>
-            <div class="boxs">
-                <div class="botao"
-                    style="display: flex;width: 608px;height: 35px;background: #3D9BA7 0% 0% no-repeat padding-box;color: white;justify-content: flex-start;align-items: center;margin-bottom: 12px;">
-                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin: -2px 0px 0px 9px;height: 39px;">
-                    <p style="margin-left: 18px;font-size: 12px;">Instituições e institucionalidades</p>
+                <div class="jan" id="janela_5" style="display: none; cursor: pointer;">
+                    <p style="width: 283px;height: 73px;font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;">
+                        Atores sociais com diferentes inserções e posições de poder e saber que influenciam as políticas
+                        públicas, produzindo ou difundindo saber sobre problemas, soluções e momentos políticos e
+                        contribuindo para o processo de formulação de políticas.</p>
                 </div>
-                <div class="janela" style="display: none;">
-                    <div
-                        style="width: 608px;height: 98px;background: #FFFFFFDB 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;margin-top: -10px;text-align: center;">
-                        <p
-                            style="font-size: 12px;font: normal normal normal 12px/13px Open sans;color: #0D536A;padding-top: 20px;padding-left: 16px;">
-                            Estruturas com conjuntos de regras e de métodos, com poder de veto e de aceitação.
-                            Propiciam
-                            contextos em que são elaboradas estratégicas táticas, estabelecem-se relações e se
-                            resolvem
-                            conflitos promovidos por grupos de pressão Ex.: Executivo, Legislativo, Judiciário,
-                            grupos
-                            organizados da sociedade civil, sociedades de classes e de categorias profissionais da
-                            área
-                            da saúde.
-                        </p>
-                    </div>
+                <div class="jan" id="janela_6" style="display: none; cursor: pointer;">
+                    <p style="width: 283px;height: 73px;font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;">
+                        Estruturas com conjuntos de regras e de métodos, com poder de veto e de aceitação. Propiciam
+                        contextos em que são elaboradas estratégicas táticas, estabelecem-se relações e se resolvem
+                        conflitos promovidos por grupos de pressão Ex.: Executivo, Legislativo, Judiciário, grupos
+                        organizados da sociedade civil, sociedades de classes e de categorias profissionais da área da
+                        saúde.</p>
                 </div>
-            </div>
-            <div class="boxs">
-                <div class="botao ativo"
-                    style="display: flex;width: 608px;height: 35px;background: #3D9BA7 0% 0% no-repeat padding-box;color: white;justify-content: flex-start;align-items: center;margin-bottom: 12px;">
-                    <img src="recursos/icones/RM_M1A1_Icones11.svg" style="margin: -2px 0px 0px 9px;height: 39px;">
-                    <p style="margin-left: 18px;font-size: 12px;">Comunidades epistêmicas</p>
-                </div>
-                <div class="janela" style="display: none;">
-                    <div
-                        style="width: 608px;height: 98px;background: #FFFFFFDB 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;margin-top: -10px;text-align: center;">
-                        <p
-                            style="font-size: 12px;font: normal normal normal 12px/13px Open sans;color: #0D536A;padding-top: 20px;padding-left: 16px;">
-                            Rede formada por profissionais especialistas com competência reconhecida e conhecimentos
-                            relevantes para as políticas públicas. Ex.: OMS; OPAS; ABRASCO, CEBES.
-                        </p>
-                    </div>
+                <div class="jan" id="janela_7" style="display: none; cursor: pointer;">
+                    <p style="width: 283px;height: 73px;font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;">
+                        Rede formada por profissionais especialistas com competência reconhecida e conhecimentos
+                        relevantes para as políticas públicas. Ex.: OMS; OPAS; ABRASCO, CEBES.</p>
                 </div>
             </div>
         </div>
@@ -180,17 +131,27 @@
     </div>
 </footer>
 <script>
-    $(document).ready(function () {
-        $('.boxs .botao').click(function () {
-            $('.janela').slideUp();
-            if ($(this).attr('class') != 'ativo') {
-                $('.boxs .botao').removeClass('ativo');
-                $(this).addClass('ativo');
-                $(this).next().slideDown();
-            } else {
-                $(this).next().slideUp();
-                $(this).removeClass('ativo');
-            }
-        });
-    });
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
 </script>
